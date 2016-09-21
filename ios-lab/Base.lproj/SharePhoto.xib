@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoListController" customModule="ios_lab" customModuleProvider="target">
+            <connections>
+                <outlet property="labelView" destination="cco-zI-rSG" id="6VM-fb-ZQA"/>
+                <outlet property="photosView" destination="9Xl-hJ-Kbe" id="TZB-hb-fc9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YPK-XP-lDT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Xl-hJ-Kbe">
+                    <rect key="frame" x="8" y="36.5" width="584" height="555.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to share this photo to the following users?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cco-zI-rSG">
+                    <rect key="frame" x="8" y="8" width="584" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cco-zI-rSG" firstAttribute="trailing" secondItem="9Xl-hJ-Kbe" secondAttribute="trailing" id="2LR-of-w6E"/>
+                <constraint firstAttribute="trailing" secondItem="cco-zI-rSG" secondAttribute="trailing" constant="8" id="76c-9K-9JE"/>
+                <constraint firstItem="9Xl-hJ-Kbe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="PFh-jP-jFm"/>
+                <constraint firstAttribute="trailing" secondItem="9Xl-hJ-Kbe" secondAttribute="trailing" constant="8" id="PLh-WQ-JLT"/>
+                <constraint firstItem="9Xl-hJ-Kbe" firstAttribute="top" secondItem="cco-zI-rSG" secondAttribute="bottom" constant="8" id="Tio-mO-hUm"/>
+                <constraint firstItem="cco-zI-rSG" firstAttribute="leading" secondItem="9Xl-hJ-Kbe" secondAttribute="leading" id="aeR-E3-ywM"/>
+                <constraint firstItem="cco-zI-rSG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" placeholder="YES" id="q6Q-WN-NSN"/>
+                <constraint firstAttribute="bottom" secondItem="9Xl-hJ-Kbe" secondAttribute="bottom" constant="8" id="yJH-8j-qs9"/>
+            </constraints>
+            <point key="canvasLocation" x="281" y="252"/>
+        </view>
+    </objects>
+</document>
